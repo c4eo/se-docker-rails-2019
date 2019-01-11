@@ -1,6 +1,6 @@
-FROM skillsengine/se-2019-rails-base-squashed:latest
+FROM se-2019-rails-base-squashed
 
-ENV HOME=/home/app
+ENV RACK_ENV=devsandbox RAILS_ENV=devsandbox HOME=/home/app
 CMD ["/sbin/my_init"]
 EXPOSE 9292
 WORKDIR /home/app/webapp
