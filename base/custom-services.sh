@@ -10,9 +10,8 @@ for fname in /home/app/webapp/bin/services/*; do
 
 cd /home/app/webapp
 
-/opt/wait-for-syslog.sh
-exec chpst -u app bundle exec "$fname" \
-  2>&1 |logger -t "$service"
+# /opt/wait-for-syslog.sh
+exec chpst -u app bundle exec "$fname" 2>&1
 STR
   chmod +x "/etc/service/$service/run"
 done
