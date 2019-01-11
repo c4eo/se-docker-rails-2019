@@ -1,4 +1,4 @@
-FROM se-2019-rails-base-squashed
+FROM skillsengine/se-2019-rails-base-squashed:latest
 
 ENV HOME=/home/app
 CMD ["/sbin/my_init"]
